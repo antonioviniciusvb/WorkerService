@@ -169,6 +169,9 @@ namespace WorkerService
             Shutdown?.Invoke(this, e);
         }
 
+        /// <summary>
+        /// Método para liberar recursos
+        /// </summary>
         public async override void Dispose()
         {
             await KillProcess();
